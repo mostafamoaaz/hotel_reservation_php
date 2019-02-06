@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Agaza - Home</title>
+    <link rel="stylesheet" href="css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="icon" type="image/png" href="images/lo.png"/>
+  </head>
+  <body>
+
+    <!--Start of social and info-->
+    <section class="social-info">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6 col-xs-12">
+            <div class="social-icons">
+              <i class="fa fa-facebook" aria-hidden="true"></i>
+              <i class="fa fa-twitter" aria-hidden="true"></i>
+              <i class="fa fa-google-plus" aria-hidden="true"></i>
+              <i class="fa fa-rss" aria-hidden="true"></i>
+            </div>
+          </div>
+          <div class="col-sm-6 col-xs-12">
+            <div class="top-info">
+              <p><a href="login.html">Log In</a> | <a href="sign-up.html">Sign Up</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Start of social and info-->
+
+    <!--start of navbar-->
+    <nav class="navbar navbar-default">
+        <div class="container">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <div class="navbar-header">
+              <a href="index.html">
+                <img src="images/logo.jpg" width="80" height="80">
+              </a>
+            </div>
+          </div>
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+              <li class="active"><a href="#">HOME</a></li>
+              <li><a href="rooms.html">ROOMS</a></li>
+              <li><a href="services.html">SERVICES</a></li>
+              <li><a href="booking.html">BOOKING</a></li>
+              <li><a href="contact.html">CONTACT US</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <!--end of navbar-->
+
+    <!--start of check-in-out-->
+    <div class="check-in-out" onclick="openNav()">
+      <h3>BOOK NOW</h3>
+      <i class="fa fa-address-book-o" aria-hidden="true"></i>
+    </div>
+    <div id="mySidenav" class="sidenav text-center">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <form method="POST">
+        <p>CHECK-IN:</p>
+          <input type="date" placeholder="Check-In" name="home-checkin" required="required">
+          <p>CHECK-OUT:</p>
+          <input type="date" placeholder="Check-Out" name="home-checkout" required="required">
+          <p>NUMBER OF ROOMS:</p>
+          <select name="home-rooms-checker" required="required">
+            <option>ROOMS</option>
+            <option value="1">1</option><option value="2">2</option><option value="3">3</option>
+            <option value="4">4</option>
+          </select>
+          <input type="text" placeholder="Single" name="home-single" required="required" class="home-room-type">
+          <input type="text" placeholder="Double" name="home-single" required="required" class="home-room-type">
+          <input type="text" placeholder="Trible" name="home-single" required="required" class="home-room-type">
+          <input type="submit" class="btn" value="CHECK YOUR BOOK">
+      </form>
+    </div>
+    <!--end of check-in-out-->
+
+    <!--Start of pics slider-->
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+          <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+          <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+        </ol>
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+          <div class="item active">
+            <img src="images/1.jpg">
+          </div>
+          <div class="item">
+            <img src="images/2.jpg">
+          </div>
+          <div class="item">
+            <img src="images/3.jpeg">
+          </div>
+        </div>
+
+        <!-- Controls -->
+        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    <!--end of pics slider-->
+
+    <!--start of discover us-->
+    <section class="discover-us text-center">
+      <div class="container">
+        <h4>DISCOVER US</h4>
+        <h2>LUXARY ACCOMMODATIONS</h2>
+        <p>
+          Get your day off to the best possible start with our extraordinarily tasty buffet breakfast, 
+          served in our quiet courtyard as you bask in the pleasant early morning sunshine, or in the 
+          comfort of our elegant Wine Bar. Sed ut perspiciatis unde omnis iste natus error sit voluptatem 
+          accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis 
+          et quasi architecto beatae vitae dicta sunt explicabo.Sed ut perspiciatis unde omnis iste natus 
+          error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab 
+          illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+        </p>
+      </div>
+    </section>
+    <!--end of discover us-->
+
+    <!--start of overview-services -->
+    <section class="overview-services text-center">
+      <h2>A SMALL OVERVIEW OF OUR MANY SERVICES</h2>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-2 col-sm-6 col-xs-12">
+            <div class="service">
+              <i class="fa fa-home"></i>
+              <p>FEEL LIKE HOME</p>
+            </div>
+          </div>
+          <div class="col-md-2 col-sm-6 col-xs-12">
+            <div class="service">
+              <i class="fa fa-shield" aria-hidden="true"></i>
+              <p>VERY HIGHT SECURITY</p>
+            </div>
+          </div>
+          <div class="col-md-2 col-sm-6 col-xs-12">
+            <div class="service">
+              <i class="fa fa-plane" aria-hidden="true"></i>
+              <p>TICKETS BOOKING</p>
+            </div>
+          </div>
+          <div class="col-md-2 col-sm-6 col-xs-12">
+            <div class="service">
+              <i class="fa fa-heart" aria-hidden="true"></i>
+              <p>CLASSY SWIMMING POOL</p>
+            </div>
+          </div>
+          <div class="col-md-2 col-sm-6 col-xs-12">
+            <div class="service">
+              <i class="fa fa-h-square" aria-hidden="true"></i>
+              <p>MEDICAL CARE</p>
+            </div>
+          </div>
+          <div class="col-md-2 col-sm-6 col-xs-12">
+            <div class="service">
+              <i class="fa fa-bookmark" aria-hidden="true"></i>
+              <p>BEST PLACE TO ANYTHING</p>
+            </div>
+          </div>
+        </div>
+        <button>SEE MORE</button>
+      </div>
+    </section>
+    <!--end of overview-services -->
+
+    <!--start of Why Agaza-->
+    <section class="why-us">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6 col-xs-12">
+            <div class="logo-img">
+              <img src="images/why-us.jpg"  width="200" height="400">
+            </div>
+          </div>
+          <div class="col-sm-6 col-xs-12">
+            <div class="why-data">
+              <h2>Why Agaza?!</h2>
+              <p>
+                  Hotel business is not just a business, it is a lifestyle because if you want to 
+                  create strong and modern hotel company, you must live in this world. It is a matter 
+                  of perfect reputation, perfect personnel, unique services, and, of course, your 
+                  desire to be the first and the best among the rivals.
+              </p>
+              <br>
+              <P>
+                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum 
+                  has been the industry's standard dummy text ever since the 1500s, when an unknown printer 
+                  took a galley of type and scrambled it to make a type specimen book. It has survived not 
+                  only five centuries, but also the leap into electronic typesetting, remaining essentially 
+                  unchanged.
+              </P>
+              <button>SEE MORE</button>
+            </div>
+          </div>
+        </div>
+      </div>
+   </section>
+    <!--end of Why Agaza-->
+
+    <!--start of ENTERTAINMENT-->
+    <section class="entertainment text-center">
+      <div class="container">
+        <div class="entertainment-data">
+          <h1>RELAX WITH A SPA &amp; ENTERTAINMENT <br> PACKAGE</h1>
+          <h3>starting at only $200</h3>
+        </div>
+      </div>
+    </section>
+    <!--end of ENTERTAINMENT-->
+
+    <!--start of our numbers-->
+    <section class="our-numbers text-center">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3 col-xs-6">
+              <div class="counter">
+                <span class="timer" data-from="0" data-to="125" data-speed="5000" data-refresh-interval="50"></span>
+                <hr>
+                <h3>Completed<br>Projects</h3>
+              </div>
+            </div>
+            <div class="col-md-3 col-xs-6">
+              <div class="counter">
+                <span class="timer" data-from="0" data-to="5786" data-speed="5000" data-refresh-interval="50"></span>
+                <hr>
+                <h3>Happy<br>Client</h3>
+              </div>
+            </div>
+            <div class="col-md-3 col-xs-6">
+              <div class="counter">
+                <span class="timer" data-from="0" data-to="355" data-speed="5000" data-refresh-interval="50"></span>
+                <hr>
+                <h3>Coffee<br>Ordered</h3>
+              </div>
+            </div>
+            <div class="col-md-3 col-xs-6">
+              <div class="counter">
+                <span class="timer" data-from="0" data-to="421" data-speed="5000" data-refresh-interval="50"></span>
+                <hr>
+                <h3>Empty<br>Rooms</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    <!--start of our numbers-->
+
+    <!--start of my map-->
+    <section class="our-map" >
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d13813.224541610865!2d31.328348031799425!3d30.05675818817074!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2seg!4v1520695144623"  frameborder="0" style="border:0;width:100%;height:100%" allowfullscreen></iframe>
+    </section>
+    <!--end of my map-->
+
+    <!--start of footer-->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-4 col-xs-12">
+            <div class="footer-contact">
+              <h3>Contact Us</h3>
+              <p>
+                Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. <span>Vivamus magna justo</span>, 
+                lacinia eget consectetur sed, convallis at tellus. <br><br>Nulla porttitor accumsan tincidunt.
+                Vivamus tortor eget <span>felis porttitor</span> volutpat. Vestibulum ante ipsum primis in 
+                faucibus orci luctus et ultrices posuere cubilia Curae.
+              </p>
+              <button>Contact Us</button>
+            </div>
+          </div>
+          <div class="col-sm-4 col-xs-12">
+            <div class="footer-office">
+              <h3>Manger Office Hours</h3>
+              <h4>Openning Days:</h4>
+              <p>Monday – Friday : 9am to 20 pm</p>
+              <p>Saturday : 9am to 17 pm</p>
+              <h4>Vacations :</h4>
+              <p>All Sunday Days</p>
+              <p>All Official Holidays</p>
+            </div>
+          </div>
+          <div class="col-sm-4 col-xs-12">
+            <div class="subscribe">
+              <h3>Subscribe</h3>
+              <p>
+                Leave your mail and we'll talk to you soon.
+              </p>
+              <div class="input-group">
+                <input type="text" class="form-control" placeholder="Enter Your Mail">
+                <span class="input-group-btn">
+                  <button class="btn" type="button">Submit</button>
+                </span>
+              </div>
+              <div class="social-icons">
+                  <i class="fa fa-facebook" aria-hidden="true"></i>
+                  <i class="fa fa-twitter" aria-hidden="true"></i>
+                  <i class="fa fa-google-plus" aria-hidden="true"></i>
+                  <i class="fa fa-rss" aria-hidden="true"></i>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!--end of footer-->
+
+    <!--start of last section-->
+    <section class="last-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6 col-xs-12">
+            <div class="copyright">
+              <p>Agaza © All Rights Reserved. Developed by <a href="#">FCIH Team</a></p>
+            </div>
+          </div>
+          <div class="col-sm-6 col-xs-12">
+            <div class="footer-links">
+              <ul class="list-unstyled">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="rooms.html">ROOMS</a></li>
+                <li><a href="services.html">SERVICES</a></li>
+                <li><a href="booking.html">BOOKING</a></li>
+                <li><a href="contact.html">CONTACT US</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--ennd of last section-->
+
+    <!--start of scroll to top button-->
+    <div id="scrollTop">
+        <i class="fa fa-chevron-circle-up fa-4x" aria-hidden="true"></i>
+    </div>
+    <!--end of scroll to top button-->
+
+    <script src="js/jquery-1.12.1.min.js"></script>
+    <script src="js/jquery.nicescroll.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/jquery.countTo.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

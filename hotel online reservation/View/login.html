@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>Agaza - Login</title>
+    <link rel="stylesheet" href="css/normalize.css"/>
+    <link rel="stylesheet" href="css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="dist/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="dist/assets/owl.theme.green.min.css">
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="icon" href="images/lo.png"/>
+  </head>
+  <body>
+
+    <!--start of login page body-->
+    <section class="login-body">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-6 col-xs-12">
+            <div class="login-info">
+              <h1>Welcome To Agaza</h1>
+              <h2>Login Now</h2>
+              <P>We are wait for you to serve you with love <i class="fa fa-heart"></i></P>
+              <form action = "../Controller/Login_controller.php"class="login-form" method="POST">
+                <div class="form-group">
+                  <div class="input-group">
+                    <span class="input-group-addon" id="sizing-addon2"><i class="fa fa-user"></i></span>
+                    <input type="text" class="form-control" placeholder="Username" aria-describedby="sizing-addon2" required="required" name="login-user">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="input-group">
+                    <span class="input-group-addon" id="sizing-addon2"><i class="fa fa-lock"></i></span>
+                    <input type="password" class="form-control" placeholder="Password" aria-describedby="sizing-addon2" required="required" name="login-password">
+                  </div>
+                </div>
+                <input type="submit" name="submit-login" value="Login" class="btn">
+              </form>
+            </div>
+          </div>
+          <div class="col-md-6 hidden-sm hidden-xs" style="padding-left: 0px;">
+            <div class="login-img text-center hidden-sm hidden-xs">
+              <img src="images/logo.jpg" class="center-block hidden-sm hidden-xs">
+              <div class="login-img-data">
+                  <i class="fa fa-heart"></i>
+                  <p>Work with love</p><br>
+                  <i class="fa fa-users"></i>
+                  <p>A very great community</p><br>
+                  <i class="fa fa-commenting"></i>
+                  <p>Easy to contact with us</p><br>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--end of login page body-->
+
+    <script src="js/jquery-1.12.1.min.js"></script>
+    <script src="js/jquery.nicescroll.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="dist/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
